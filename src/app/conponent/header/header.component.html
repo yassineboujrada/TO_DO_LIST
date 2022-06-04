@@ -1,0 +1,6 @@
+
+<header>
+    <h1>{{title}}</h1>
+    <app-buttons *ngIf="inRoute('/')" color="{{showAddTeask ? 'red' : 'green'}}" text="{{showAddTeask ? 'Close' : 'Add'}}" (btnclick)="toggle_add_task()"></app-buttons>
+</header>
+<!-- <p>header works!</p> -->

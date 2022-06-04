@@ -1,0 +1,6 @@
+<!-- <p>task-items works!</p> -->
+
+<div [ngClass]="{reminder:task.reminder}" class="task" (dblclick)="toggle(task)">
+    <h3>{{task.text}} <fa-icon (click)="Drop_task(task)" [ngStyle]="{'color':'red'}" [icon]="faTimes"></fa-icon></h3>
+    <p>{{task.day}}</p>
+</div>
